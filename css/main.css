@@ -1,0 +1,541 @@
+@charset "UTF-8";
+/*-------------------- ESTILOS DEL NAV ---------------------*/
+/*----------- MAPAS ------------*/
+/*----------- MIXIN ------------*/
+/*-------------- EXTENDS --------------*/
+section p, .product-box h5, .product-box p, .main-FAQ p {
+  padding: 0em 1.5em 0em 1.5em;
+  margin: 1em 1em 1em 1em; }
+
+/*------------ GENERALES ------------*/
+.menu {
+  z-index: 100;
+  width: 100%;
+  background-color: #333333;
+  box-shadow: #0052cf;
+  /*------------ BOTON WSP ------------*/
+  /*------------ LOGO ------------*/ }
+  .menu .btn {
+    margin: 0em 0.3em 0em 0.3em;
+    padding: 0.3em 1em 0.3em 1em; }
+    .menu .btn a {
+      text-decoration: none;
+      color: #f8f7f7; }
+  .menu .tamaño-logo {
+    border-radius: 100px; }
+  .menu .menu-logo {
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: linear; }
+
+@keyframes girar {
+  from {
+    transform: rotateZ(0); }
+  to {
+    transform: rotateZ(360deg); } }
+
+/*-------------------- ESTILOS DEL HEADER ---------------------*/
+/*----------- MAPAS ------------*/
+/*----------- MIXIN ------------*/
+/*-------------- EXTENDS --------------*/
+section p, .product-box h5, .product-box p, .main-FAQ p {
+  padding: 0em 1.5em 0em 1.5em;
+  margin: 1em 1em 1em 1em; }
+
+header .Logo-Riqui {
+  width: 30%;
+  margin-top: 5em;
+  margin-left: -4.5em; }
+
+header .header-slogan {
+  margin: 0em 8em 0em 0.8em;
+  padding: 0em 1.6em 0em 0em;
+  font-size: 1em;
+  color: #f8f7f7; }
+
+header .header-sloganDos {
+  margin: 0em 0.3em 1em 1.6em;
+  padding: 0em 0.8em 0em 0em;
+  font-size: 1.1em;
+  color: #f8f7f7; }
+
+.header-background {
+  background-image: url("../../imagenes/superiorRiqui.png");
+  background-size: cover; }
+
+/*-------------------- ESTILOS DEL SECTION ---------------------*/
+/*----------- MAPAS ------------*/
+/*----------- MIXIN ------------*/
+/*-------------- EXTENDS --------------*/
+section p, .product-box h5, .product-box p, .main-FAQ p {
+  padding: 0em 1.5em 0em 1.5em;
+  margin: 1em 1em 1em 1em; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  section h3 {
+    margin: 0em 0em 0.8em 0em; }
+  section div {
+    height: 5px;
+    width: 5%;
+    margin-left: 48%;
+    background-color: #0052cf; }
+  section p {
+    text-align: justify; }
+
+/*-------------------- ESTILOS DEL MAIN ---------------------*/
+/*----------- MAPAS ------------*/
+/*----------- MIXIN ------------*/
+/*-------------- EXTENDS --------------*/
+section p, .product-box h5, .product-box p, .main-FAQ p {
+  padding: 0em 1.5em 0em 1.5em;
+  margin: 1em 1em 1em 1em; }
+
+/*-------------------- APERTURA Y PILARES ESTRATEGICOS ---------------------*/
+.main h3 {
+  padding: 1.5em 1.5em 0em 1.5em;
+  color: #0052cf;
+  font-weight: bold; }
+
+.main h5 {
+  font-weight: bold; }
+
+.main p {
+  padding: 0.5em 1em 1em 1em; }
+
+.main-razones img {
+  width: 30%;
+  margin: 1em; }
+
+/*-------------------- ESTILOS DEL SECTION PRODUCTOS ---------------------*/
+/*------------ GENERALES ------------*/
+.productos {
+  background-color: #f8f7f7; }
+  .productos h3 {
+    padding: 1em 1em 0em 1em;
+    margin: 0em 1em 0em 1em; }
+    .productos h3 a {
+      text-decoration: none;
+      color: #191919; }
+
+.section-producto {
+  margin: 0em 5em 0em 5em; }
+  .section-producto .caja-img {
+    margin-top: -3em; }
+  .section-producto img {
+    width: 40%;
+    position: relative;
+    top: 5em; }
+
+/*------------ CAJA DE DESCRIPCIÓN ------------*/
+.product-box {
+  background-color: #d7dff5;
+  padding: 5em 0em 1em 0em;
+  margin-bottom: 2em;
+  border-radius: 2%; }
+  .product-box h5 a {
+    text-decoration: none;
+    color: #0052cf; }
+  .product-box p {
+    text-align: justify; }
+
+/*-------------------- ESTILOS DEL SECTION CLIENTES ---------------------*/
+/*------------ GENERALES ------------*/
+.Section-Clientes {
+  background-color: #f0f4ff; }
+  .Section-Clientes h4 {
+    color: #0052cf;
+    font-weight: bold; }
+
+/*------------ ESTRELLAS ------------*/
+.estrellas {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .estrellas img {
+    width: 4%;
+    margin: 0.5em 1em 0.5em 1em; }
+
+/*-------------------- ESTILOS DEL SECTION CLIENTES COMENTARIOS ---------------------*/
+/*------------ GENERALES ------------*/
+.comentarios {
+  margin: 2em; }
+
+/*------------ CAROUSEL ------------*/
+.carousel {
+  margin: 3em 10em 3em 10em; }
+
+.comentariosBox img {
+  border-radius: 100%;
+  width: 20%; }
+
+.comentariosBox p {
+  font-size: 0.8em;
+  margin-top: 1em;
+  padding: 0em 10em 0em 10em;
+  font-style: italic; }
+  .comentariosBox p:hover {
+    font-weight: bold;
+    font-size: 1.2em; }
+
+/*-------------------- ESTILOS DEL FAQ ---------------------*/
+/*------------ GENERALES ------------*/
+.h4-Faq {
+  padding: 0em 5.5em 0em 0em;
+  font-weight: bold; }
+
+.FAQ {
+  margin: 5em 0em 5em 0em; }
+
+.Box-Faq {
+  display: flex; }
+  .Box-Faq .Img-Faq img {
+    width: 35em;
+    position: relative;
+    top: 1.7em;
+    right: 3em; }
+
+/*------------ PREGUNTAS E IMAGEN ------------*/
+.main-FAQ h5 {
+  padding: 0.5em 1.5em 0em 1.5em;
+  font-size: 1em;
+  color: #0052cf; }
+
+.main-FAQ img {
+  width: 5%;
+  margin: 0em 0.5em 0em 1em;
+  animation-name: rotar;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-timing-function: linear; }
+
+@keyframes rotar {
+  from {
+    transform: rotatey(0); }
+  to {
+    transform: rotatey(360deg); } }
+
+.main-FAQ p {
+  font-size: 0.8em;
+  text-align: justify; }
+
+/*-------------------- ESTILOS DEL FOOTER ---------------------*/
+/*----------- MAPAS ------------*/
+/*----------- MIXIN ------------*/
+/*-------------- EXTENDS --------------*/
+section p, .product-box h5, .product-box p, .main-FAQ p {
+  padding: 0em 1.5em 0em 1.5em;
+  margin: 1em 1em 1em 1em; }
+
+/*------------- ESTILOS DEL FOOTER SUPERIOR (GRIS CLARO) ----------------*/
+.footer1 {
+  background-color: #232323;
+  padding: 30px 0 0 0;
+  font-size: 12px;
+  color: #999; }
+  .footer1 a {
+    color: #ccc; }
+    .footer1 a:hover {
+      color: #fff;
+      font-weight: bold; }
+  .footer1 .widget {
+    margin-bottom: 30px; }
+  .footer1 .widget-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #ccc;
+    margin: 0 0 20px; }
+  .footer1 .entry-meta {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 35px 0;
+    padding: 2px 0;
+    color: #888888;
+    font-size: 12px;
+    font-size: 0.75rem; }
+    .footer1 .entry-meta a {
+      color: #333333; }
+    .footer1 .entry-meta .meta-in {
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0; }
+
+/*------------- ESTILOS DEL FOOTER INFERIOR (GRIS OSCURO) ----------------*/
+.footer2 {
+  background: #191919;
+  padding: 15px 0;
+  color: #777;
+  font-size: 12px; }
+  .footer2 a {
+    color: #aaa; }
+    .footer2 a:hover {
+      color: #fff;
+      font-weight: bold; }
+  .footer2 p {
+    margin: 0; }
+
+.widget-simplenav {
+  margin-left: -5px; }
+  .widget-simplenav a {
+    margin: 0 5px; }
+
+/*------------- ESTILOS DE LAS IMAGENES DEL FOOTER ----------------*/
+.Footer-redes {
+  display: flex; }
+
+.facebook {
+  width: 18%;
+  height: 18%; }
+
+.Instagram {
+  width: 30%;
+  height: 30%; }
+
+/*-------------------- ESTILOS DE PAGINAS INTERNAS ---------------------*/
+/*----------- MAPAS ------------*/
+/*----------- MIXIN ------------*/
+/*-------------- EXTENDS --------------*/
+section p, .product-box h5, .product-box p, .main-FAQ p {
+  padding: 0em 1.5em 0em 1.5em;
+  margin: 1em 1em 1em 1em; }
+
+/*-------------------- ESTILOS GENERALES ---------------------*/
+.header-interno {
+  padding-top: 8em; }
+
+.Interno-img-marcador {
+  width: 5%;
+  margin: 0em 1em 0em 1em; }
+
+.Titulo {
+  margin-bottom: 2em;
+  margin-right: 3em;
+  color: #0052cf; }
+
+.contenido {
+  margin-right: 3em;
+  margin-bottom: 4em; }
+
+.contenido p {
+  text-align: justify;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  font-size: 1em;
+  padding-right: 2em; }
+
+/*-------------------- ESTILOS PRODUCTOS ---------------------*/
+/*---------- ESTILOS PRODUCTOS TEXTOS ----------*/
+.contenido img {
+  width: 20%; }
+
+.slidebar h4 {
+  margin-bottom: 1em;
+  text-align: right;
+  font-size: 1.2em; }
+
+.slidebar p {
+  margin-bottom: 1em;
+  text-align: justify;
+  margin-bottom: 2em;
+  font-size: 0.8em;
+  padding-left: 3em; }
+
+/*---------- ESTILOS PRODUCTOS CAJA IMPORTANTE ----------*/
+.importante {
+  background-color: #f2f2a3;
+  border-radius: 2%; }
+  .importante h4 {
+    text-align: center;
+    margin-top: 1em; }
+    .importante h4:hover {
+      color: red;
+      font-size: 1.8em; }
+  .importante p {
+    padding: 0em 1em 0em 1em; }
+
+/*-------------------- ESTILOS SECCIÓN CONOCENOS ---------------------*/
+/*--------------- GENERALES ----------------*/
+.encabezado-conocenos {
+  margin-bottom: 2em; }
+  .encabezado-conocenos h2 {
+    color: #0052cf;
+    font-size: 1em; }
+
+.slidebar-left h4 {
+  margin-bottom: 1em;
+  padding-right: 5em;
+  font-size: 1.2em;
+  text-align: left; }
+  .slidebar-left h4 a {
+    text-decoration: none;
+    color: #333333; }
+    .slidebar-left h4 a:hover {
+      color: #0052cf; }
+
+.slidebar-left p {
+  margin-bottom: 1em;
+  padding-right: 5em;
+  text-align: justify;
+  margin-bottom: 2em; }
+
+.display-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: left; }
+
+.flexbox-caja {
+  display: flex;
+  align-items: center;
+  margin: 3em 0em 1em 0em; }
+  .flexbox-caja p {
+    text-align: center;
+    margin: 0em 0em 0em 2em;
+    font-weight: bold;
+    font-size: 1em; }
+
+/*-------------------- ESTILOS RENTABILIDAD ---------------------*/
+.accordion-body img {
+  width: 100%; }
+
+/*-------------------- ESTILOS HISTORIA ---------------------*/
+.fundadores h5 {
+  text-align: start;
+  margin: 0em 0em 1em 2em; }
+
+.fundadores p {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 1em; }
+
+/*-------------------- ESTILOS FORMULARIOS INTENROS ---------------------*/
+form {
+  margin-bottom: 3em; }
+
+.opcionMultiple {
+  text-decoration: none;
+  color: #333333; }
+
+/*-------------------- MEDIA QUERIES DOS TAMAÑOS ---------------------*/
+/*-------------------- PANTALLA PEQUEÑA ---------------------*/
+@media screen and (max-width: 480px) {
+  .facebook {
+    width: 8%;
+    height: 8%; }
+  .Instagram {
+    width: 15%;
+    height: 15%; }
+  header .Logo-Riqui {
+    margin-left: 38%; }
+  header .header-slogan {
+    font-size: 0.8em;
+    text-align: center; }
+  header .header-sloganDos {
+    font-size: 0.8em;
+    text-align: center; }
+  section h3 {
+    font-size: 1.2em; }
+  section p {
+    font-size: 0.8em; }
+  .main h4 {
+    font-size: 1.2em; }
+  .main-razones img {
+    width: 18%; }
+  .main-razones h5 {
+    font-size: 1em; }
+  .main-razones p {
+    font-size: 0.8em; }
+  .Img-Faq {
+    display: none; }
+  .main-FAQ h5 {
+    font-size: 1em; }
+  .main-FAQ p {
+    font-size: 0.8em; }
+  .estrellas img {
+    height: 8%;
+    width: 8%;
+    margin: 0.5em; }
+  .carousel {
+    margin: 3em; }
+  .contenido h2 {
+    font-size: 1.3em; }
+  .contenido p {
+    font-size: 0.8em; }
+  .slidebar h4 {
+    text-align: start; }
+  .slidebar p {
+    font-size: 0.8em; }
+  .menu-conocenos {
+    display: none; } }
+
+/*-------------------- PANTALLA MEDIANA ---------------------*/
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .facebook {
+    width: 10%;
+    height: 10%; }
+  .Instagram {
+    width: 17%;
+    height: 17%; }
+  header .Logo-Riqui {
+    width: 50%;
+    margin-left: 25%; }
+  header .header-slogan {
+    font-size: 0.8em;
+    text-align: center; }
+  header .header-sloganDos {
+    font-size: 0.8em;
+    text-align: center; }
+  section h3 {
+    font-size: 1.2em; }
+  section p {
+    font-size: 0.8em; }
+  .main h3 {
+    font-size: 1.2em; }
+  .main-razones img {
+    width: 18%; }
+  .main-razones h5 {
+    font-size: 1em; }
+  .main-razones p {
+    font-size: 0.8em;
+    padding: 0em 8em 1em 8em; }
+  .Img-Faq {
+    display: none; }
+  .main-FAQ h5 {
+    font-size: 1em; }
+  .main-FAQ p {
+    font-size: 0.75m; }
+  .section-producto h5 {
+    font-size: 1em; }
+  .section-producto p {
+    font-size: 0.8em; }
+  .section-producto img {
+    width: 18%; }
+  section h4 {
+    font-size: 1em; }
+  .estrellas img {
+    height: 8%;
+    width: 8%;
+    margin: 0.5em; }
+  .carousel {
+    margin: 3em; }
+  .comentariosBox p {
+    font-size: 0.7em; }
+  .contenido h2 {
+    font-size: 1.3em; }
+  .contenido p {
+    font-size: 0.8em; }
+  .slidebar h4 {
+    text-align: start; }
+  .slidebar p {
+    font-size: 0.8em; }
+  .menu-conocenos {
+    display: none; } }
+
+/*----------- MAPAS ------------*/
+/*----------- MIXIN ------------*/
+/*-------------- EXTENDS --------------*/
+section p, .product-box h5, .product-box p, .main-FAQ p {
+  padding: 0em 1.5em 0em 1.5em;
+  margin: 1em 1em 1em 1em; }

@@ -1,0 +1,205 @@
+/*-------------------- ESTILOS DEL MAIN ---------------------*/
+
+@import "../base/mapas";
+@import "../base/mixin";
+@import "../base/extends";
+
+
+
+/*-------------------- APERTURA Y PILARES ESTRATEGICOS ---------------------*/
+.main{
+    h3{
+        padding: 1.5em 1.5em 0em 1.5em;
+        color: map-get($map: $coloresLetras, $key: color-principal);
+        font-weight: bold;
+    }
+
+    h5{
+        font-weight: bold;
+    }
+
+    p{
+        padding: 0.5em 1em 1em 1em;
+    }
+}
+
+.main-razones{
+    img{
+        width:30%;
+        margin:1em;
+    }
+}
+
+
+/*-------------------- ESTILOS DEL SECTION PRODUCTOS ---------------------*/
+
+
+/*------------ GENERALES ------------*/
+.productos{
+    background-color: map-get($map: $coloresFondos, $key: color-secundario);
+
+    h3{
+        padding: 1em 1em 0em 1em;
+        margin: 0em 1em 0em 1em;
+        a{
+            text-decoration: none;
+            color: map-get($map: $coloresLetras, $key:Color-oscuro)
+        }
+    }
+}
+
+.section-producto{
+
+    margin: 0em 5em 0em 5em;
+
+    .caja-img{
+        margin-top: -3em;
+    }
+    img{
+        width: 40%;
+        position: relative;
+        top:5em;
+    }
+}
+
+
+/*------------ CAJA DE DESCRIPCIÓN ------------*/ 
+
+.product-box{
+    background-color: map-get($map: $coloresFondos, $key:color-boxup);
+    padding: 5em 0em 1em 0em;
+    margin-bottom: 2em;
+    border-radius:2%;
+    h5{
+        @extend %margen;
+        a{
+            text-decoration: none;
+            color: map-get($map: $coloresLetras, $key:color-principal);
+        }
+    }
+
+    p{
+        @extend %margen;
+        text-align: justify;
+    }
+}
+
+
+
+
+/*-------------------- ESTILOS DEL SECTION CLIENTES ---------------------*/
+
+
+/*------------ GENERALES ------------*/ 
+
+.Section-Clientes{
+    background-color: map-get($map:$coloresFondos, $key:color-box);
+    h4{
+        color: map-get($map: $coloresLetras, $key: color-principal);
+        font-weight: bold;
+    }
+}
+
+/*------------ ESTRELLAS ------------*/ 
+
+.estrellas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 4%;
+        margin:0.5em 1em 0.5em 1em;
+    }
+
+}
+
+/*-------------------- ESTILOS DEL SECTION CLIENTES COMENTARIOS ---------------------*/
+
+
+/*------------ GENERALES ------------*/ 
+.comentarios{
+    margin:2em;
+}
+
+/*------------ CAROUSEL ------------*/ 
+
+.carousel{
+    margin: 3em 10em 3em 10em;
+}
+
+.comentariosBox{
+   
+    img{
+        border-radius: 100%;
+        width: 20%;
+    }
+    p{
+        font-size: 0.8em;
+        margin-top: 1em;
+        padding: 0em 10em 0em 10em;
+        font-style: italic;
+        &:hover{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+}
+
+
+/*-------------------- ESTILOS DEL FAQ ---------------------*/
+
+/*------------ GENERALES ------------*/ 
+
+.h4-Faq{
+    padding: 0em 5.5em 0em 0em;
+    font-weight: bold;
+}
+
+.FAQ{
+    margin:5em 0em 5em 0em;
+}
+
+.Box-Faq{
+    display: flex;
+    .Img-Faq{
+        img{
+            width: 35em;
+            position: relative;
+            top: 1.7em;
+            right: 3em;
+        }
+    }
+}
+
+/*------------ PREGUNTAS E IMAGEN ------------*/ 
+
+.main-FAQ{
+    h5{
+        padding: 0.5em 1.5em 0em 1.5em;
+        font-size: 1em;
+        color: map-get($map: $coloresLetras, $key: color-principal )
+    }
+
+    img{
+        width:5%;
+        margin: 0em 0.5em 0em 1em;
+        @include moneda-rotar(rotar);
+    }
+
+    @keyframes rotar{
+        from{
+            @include animaciones (rotatey(0));
+        }
+
+        to{
+            @include animaciones (rotatey(360deg));
+        }
+    }
+
+    p{
+        @extend %margen;
+        font-size: 0.8em;
+        text-align: justify;
+    }
+}

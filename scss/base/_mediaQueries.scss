@@ -1,0 +1,254 @@
+/*-------------------- MEDIA QUERIES DOS TAMAÑOS ---------------------*/
+
+/*-------------------- PANTALLA PEQUEÑA ---------------------*/
+
+
+@media screen and (max-width: 480px){
+    .facebook{
+        width: 8%;
+        height: 8%;
+    }
+    
+    .Instagram{
+        width: 15%;
+        height: 15%;
+    }
+
+    header{
+
+        .Logo-Riqui{
+
+            margin-left: 38%;
+        }
+
+
+        .header-slogan{
+            font-size: 0.8em;
+            text-align: center;
+        }
+    
+        .header-sloganDos{
+            font-size: 0.8em;
+            text-align: center;
+        }
+
+    }
+
+
+
+    section{
+        h3{
+            font-size: 1.2em;
+        }
+
+        p{
+            font-size: 0.8em;
+        }
+    }
+
+    .main h4{
+        font-size: 1.2em;
+    }
+
+    .main-razones {
+        img{
+            width: 18%;
+        }
+
+        h5{
+            font-size: 1em;
+        }
+
+        p{
+            font-size: 0.8em;
+        }
+    }
+
+    .Img-Faq{
+        display:none
+    }
+
+    .main-FAQ {
+        h5{
+            font-size: 1em;
+        }
+
+        p{
+            font-size: 0.8em;
+        }
+    }
+
+    .estrellas img{
+        height: 8%;
+        width: 8%;
+        margin:0.5em;
+    }
+
+    .carousel{
+        margin: 3em;
+    }
+
+    .contenido{
+         h2{
+            font-size: 1.3em;
+         }
+
+         p{
+            font-size: 0.8em;
+         }
+    }
+    
+    .slidebar {
+        h4{
+            text-align: start;
+        }
+
+        p{
+            font-size: 0.8em;
+        }
+    }   
+
+    .menu-conocenos{
+        display: none;
+    }
+}
+
+
+/*-------------------- PANTALLA MEDIANA ---------------------*/
+
+
+@media screen and (min-width:480px) and (max-width: 768px){
+    
+    .facebook{
+        width: 10%;
+        height: 10%;
+    }
+    
+    .Instagram{
+        width: 17%;
+        height: 17%;
+    }
+
+    header{
+
+        .Logo-Riqui{
+            width: 50%;
+            margin-left: 25%;
+        }
+
+
+        .header-slogan{
+            font-size: 0.8em;
+            text-align: center;
+        }
+    
+        .header-sloganDos{
+            font-size: 0.8em;
+            text-align: center;
+        }
+
+    }
+
+    section{
+        h3{
+            font-size: 1.2em;
+        }
+
+        p{
+            font-size: 0.8em;
+        }
+    }
+
+    .main h3{
+        font-size: 1.2em;
+    }
+
+    .main-razones {
+        img{
+            width: 18%;
+        }
+
+        h5{
+            font-size: 1em;
+        }
+
+        p{
+            font-size: 0.8em;
+            padding: 0em 8em 1em 8em;
+        }
+    }
+
+    .Img-Faq{
+        display:none
+    }
+
+    .main-FAQ {
+        h5{
+            font-size: 1em;
+        }
+
+        p{
+            font-size: 0.75m;
+        }
+    }
+
+    .section-producto {
+        h5{
+            font-size: 1em;
+        }
+    
+         p{
+            font-size: 0.8em;
+        }
+    
+        img{
+            width:18%;
+        }
+    }
+
+    section {
+        h4{
+            font-size: 1em;
+        }
+    }
+
+    .estrellas img{
+        height: 8%;
+        width: 8%;
+        margin:0.5em;
+    }
+
+    .carousel{
+        margin: 3em;
+    }
+
+    .comentariosBox{
+
+        p{
+            font-size: 0.7em;
+        }
+    }
+
+    .contenido{
+         h2{
+            font-size: 1.3em;
+         }
+
+         p{
+            font-size: 0.8em;
+         }
+    }
+    
+    .slidebar {
+        h4{
+            text-align: start;
+        }
+
+        p{
+            font-size: 0.8em;
+        }
+    }
+    .menu-conocenos{
+        display: none;
+    }
+}

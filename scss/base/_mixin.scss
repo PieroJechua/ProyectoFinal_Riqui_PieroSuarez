@@ -1,0 +1,23 @@
+/*----------- MIXIN ------------*/
+
+@mixin Logo-Girar ($accion) {
+    animation-name: $accion;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+};
+
+
+
+@mixin moneda-rotar ($accion) {
+    animation-name: $accion;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+};
+
+
+
+@mixin animaciones ($transformaciones){
+    transform: $transformaciones;
+};

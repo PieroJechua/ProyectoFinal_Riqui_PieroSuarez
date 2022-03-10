@@ -1,0 +1,175 @@
+/*-------------------- ESTILOS DE PAGINAS INTERNAS ---------------------*/
+
+@import "../base/mapas";
+@import "../base/mixin";
+@import "../base/extends";
+
+
+/*-------------------- ESTILOS GENERALES ---------------------*/
+
+
+.header-interno{
+    padding-top: 8em;
+}
+
+.Interno-img-marcador{
+    width: 5%;
+    margin: 0em 1em 0em 1em;
+}
+
+.Titulo{
+    margin-bottom: 2em;
+    margin-right: 3em;
+    color: map-get($map: $coloresLetras, $key: color-principal);
+}
+
+.contenido{
+    margin-right: 3em;
+    margin-bottom: 4em;
+}
+
+.contenido p{
+    text-align: justify;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    font-size: 1em;
+    padding-right: 2em ;
+
+}
+
+/*-------------------- ESTILOS PRODUCTOS ---------------------*/
+
+
+/*---------- ESTILOS PRODUCTOS TEXTOS ----------*/
+
+.contenido{
+    img{
+        width: 20%;
+    }
+}
+
+.slidebar{
+
+    h4{
+        margin-bottom: 1em;
+        text-align: right;
+        font-size: 1.2em;
+    }
+
+    p{
+        margin-bottom: 1em;
+        text-align: justify;
+        margin-bottom: 2em;
+        font-size: 0.8em;
+        padding-left: 3em;
+    }
+}
+
+/*---------- ESTILOS PRODUCTOS CAJA IMPORTANTE ----------*/
+
+.importante{
+    background-color: map-get($map: $coloresFondos , $key:color-importante);
+    border-radius: 2%;
+    h4{
+        text-align: center;
+        margin-top: 1em;
+        &:hover{
+            color: map-get($map: $coloresLetras, $key:color-importante );
+            font-size: 1.8em;
+        }
+    }
+    p{
+        padding: 0em 1em 0em 1em;
+    }
+}
+
+/*-------------------- ESTILOS SECCIÓN CONOCENOS ---------------------*/
+
+/*--------------- GENERALES ----------------*/
+
+.encabezado-conocenos{
+    margin-bottom: 2em;
+    h2{
+    color: map-get($map: $coloresLetras, $key: color-principal);
+    font-size: 1em;
+    }
+}
+
+.slidebar-left h4{
+    margin-bottom: 1em;
+    padding-right: 5em;
+    font-size: 1.2em;
+    text-align: left;
+    a{
+        text-decoration: none;
+        color: map-get($map: $footer, $key: color-Enlace);
+        &:hover{
+            color: map-get($map: $coloresLetras, $key: color-principal);
+        }
+    }
+}
+
+.slidebar-left p{
+    margin-bottom: 1em;
+    padding-right: 5em;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+.display-flex{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.flexbox-caja{
+    display: flex;
+    align-items: center;
+    margin: 3em 0em 1em 0em;
+
+
+    p{
+        text-align: center;
+        margin: 0em 0em 0em 2em;
+        font-weight: bold;
+        font-size: 1em
+    };
+
+}
+
+/*-------------------- ESTILOS RENTABILIDAD ---------------------*/
+
+.accordion-body{
+    img{
+        width: 100%;
+    }
+}
+
+/*-------------------- ESTILOS HISTORIA ---------------------*/
+
+.fundadores{
+    h5{
+        text-align: start;
+        margin: 0em 0em 1em 2em;
+    }
+
+    p{
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 1em;
+    }
+}
+
+
+/*-------------------- ESTILOS FORMULARIOS INTENROS ---------------------*/
+
+
+form{
+    margin-bottom: 3em;
+}
+
+.opcionMultiple{
+    text-decoration: none;
+    color: map-get($map: $footer, $key: color-Enlace);
+}
+

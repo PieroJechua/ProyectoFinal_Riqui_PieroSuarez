@@ -1,0 +1,26 @@
+/*-------------------- ESTILOS DEL SECTION ---------------------*/
+@import "../base/mapas";
+@import "../base/mixin";
+@import "../base/extends";
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3{
+        margin: 0em 0em 0.8em 0em;
+    }
+
+    div{
+        height: 5px;
+        width: 5%;
+        margin-left: 48%;   
+        background-color: map-get($map: $coloresFondos, $key:color-principal);
+    }
+
+    p{
+        @extend %margen;
+        text-align: justify;
+    }
+}

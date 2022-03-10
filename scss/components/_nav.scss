@@ -1,0 +1,42 @@
+/*-------------------- ESTILOS DEL NAV ---------------------*/
+@import "../base/mapas";
+@import "../base/mixin";
+@import "../base/extends";
+
+/*------------ GENERALES ------------*/ 
+.menu{
+    z-index:100;
+    width: 100%;
+    background-color: map-get($map: $coloresFondos, $key: color-menu);
+    box-shadow:map-get($map: $coloresFondos, $key: color-principal);
+
+/*------------ BOTON WSP ------------*/ 
+    .btn{
+        margin: 0em 0.3em 0em 0.3em;
+        padding: 0.3em 1em 0.3em 1em;
+
+        a{
+        text-decoration: none;
+        color:map-get($map: $coloresLetras, $key: color-secundario);
+        }
+
+    }
+
+/*------------ LOGO ------------*/ 
+    .tamaño-logo{
+        border-radius: 100px;
+    }
+
+    .menu-logo{
+        @include Logo-Girar(girar);
+        @keyframes girar{
+            from{
+                @include animaciones (rotateZ(0));
+            }
+    
+            to{
+                @include animaciones (rotateZ(360deg));
+            }
+        }
+    }
+}
